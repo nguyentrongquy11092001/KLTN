@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà sách online</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Begin nav -->
+            <ul id="nav">
+                <li><a href="">Trang Chủ</a></li>
+                <li><a href="">Giới Thiệu</a></li>
+                <li><a href="">Sách Mới</a></li>
+                <li><a href="">Hỗ Trợ</a></li>
+                <li>
+                    <a href="">
+                        Thể Loại Sách
+                        <i class="ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="">Sách Giáo Khoa</a></li>
+                        <li><a href="">Truyện Tranh</a></li>
+                        <li><a href="">Thể Thao</a></li>
+                        <li><a href="">Văn Hóa</a></li>
+                        <li><a href="">Kinh Tế</a></li>
+                        <li><a href="">Ẩm Thực</a></li>
+                    </ul>
+                </li>
+                <li><a href="/html/register.html" onclick="">Đăng Ký/ Đăng Nhập</a></li>
+            </ul>
+            <!-- End nav -->
+            <!-- Begin search -->
+            <div title="Tìm kiếm sách" class="btn-search">
+                <i class="ti-search"></i>
+            </div>
+            <!-- End search -->
+        </div>
+
+        <div class="wrapper">
+      <div class="sidebar">
+        <div class="profile">
+          <img src="/assets/img/avatarNTQ.jpg" alt="avatar" />
+          <h3>Nguyễn Trọng Quý</h3>
+          <p>Admin</p>
+        </div>
+
+        <div class="w3-bar-block " style="width:170px">
+            <h5 class="menu-item" style="margin-left: 15px; font-weight: 500; font-size: 18px;">Menu</h5>
+            <button class="tablink" onclick="openTab(event, 'tab-home')"><i class="ti-home icon"></i>Trang chủ</button>
+            <button class="tablink" onclick="openTab(event, 'tab-book')"><i class="ti-book icon"></i>Kho sách</button>
+            <button class="tablink" onclick="openTab(event, 'tab-update')"><i class="ti-settings icon"></i>Cập nhật</button>
+            <button class="tablink" onclick="openTab(event, 'tab-libra')"><i class="ti-user icon"></i>Thủ thư</button>
+            <button class="tablink" onclick="openTab(event, 'tab-reader')"><i class="ti-user icon"></i>Đọc giả</button>
+            <button class="tablink" onclick="openTab(event, 'tab-invoi')"><i class="ti-clipboard icon"></i>Phiếu mượn</button>
+          </div>
+      </div>
+      <div class="section">
+        <div id="content">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="ti-menu" id="openMenu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="tab-home" class="tab">
+                <div class="">
+                  <h2 style="text-align: center;font-weight: 900;">Hệ thống quản lý thư viện trực tuyến</h2>
+                </div>
+                <div class="img1"></div>
+                <h3 style="margin-left: 20px;"><b>Những lợi ích của website quản lý thư viện mang lại là gì?</b></h3>
+                <div class="text-benefit">
+                    <p>Như chúng ta đã biết thì hầu hết mọi trường học hiện nay đều có thư viện. 
+                        Đây là nơi yên tĩnh và có hỗ trợ đầy đủ thiết bị để phục vụ bạn học tập ngay tại trường. 
+                        Tuy nhiên số lượng học viên tại trường khá nhiều cho nên việc quản lý thư viện trở nên khó hơn. 
+                        Và giải pháp nào là tốt nhất để giúp việc quản lý của bạn trở nên dễ dàng và hiệu quả hơn? Đó chính là website quản lý thư viện.</p>
+                    <h5><b>Quản lý tình trạng sách báo tại thư viện</b></h5>
+                    <p>Trong thư viện số lượng sách báo rất nhiều để hỗ trợ phục vụ các bạn học sinh sinh viên. Bởi tình trạng mượn sách báo tại thư viện diễn ra hằng ngày và số lượng rất nhiều cho nên cần phải có hệ thống quản lý thật chặt chẽ để tránh sót mất tài liệu. Khi có website quản lý thư viện thì bạn sẽ biết được số lượng tài liệu nào được mượn nhiều nhất và tài liệu nào không được sử dụng để thanh lý.</p>
+                    <h5><b>Phân loại tài liệu theo chủ đề và lĩnh vực một cách dễ dàng</b></h5>
+                    <p>Sử dụng website quản lý thư viện mang lại rất nhiều lợi ích. Nó giúp chúng ta có thể phân loại tài liệu theo chủ đề và lĩnh vực một cách dễ dàng. Chúng ta sẽ phân loại theo chủ đề và lĩnh vực để giúp độc giả có thể tự tra cứu trên hệ thống và lựa tài liệu mình mong muốn.</p>
+                    <h5><b>Cập nhật thông tin đầy đủ khi thanh lý tài liệu cũ và nhập sách mới</b></h5>
+                    <p>Nếu thư viện sử dụng cách quản lý thủ công thì sẽ xác định được việc nhập thêm sách mới để phục vụ sinh viên và thanh lý tài liệu cũ không sử dụng được. Do vậy khi có website quản lý thư viện thì những người ở vị trí quản lý chỉ cần lên website và điền đầy đủ thông tin là tài liệu nhập và tài liệu thanh lý để phục vụ về sau hiệu quả hơn.</p>
+                    <h5><b>Quản lý việc mượn và trả tài liệu</b></h5>
+                    <p>Khi học sinh sinh viên có nhu cầu mượn sách tài thư viện thì việc bạn tới trực tiếp tận nơi sẽ cần phải xếp hàng để tới lượt mình. Nếu số lượng hàng ngày nhiều thì bạn sẽ khó có thể mượn được tài liệu mình mong muốn. Do vậy website quản lý thư viện sẽ kết hợp cấp thẻ thư viện để các em sinh viên có thể mượn hoặc trả ngay trên website. Bạn chỉ cần xác nhận thông tin được mượn tài liệu là có thể qua trực tiếp thư viện để lấy khi có nhu cầu.</p>
+                </div>
+            </div>
+
+            <div id="tab-book" class="w3-container tab" style="display:none">
+                
+                <div class="header-book">
+                  <h2 style="font-weight: 900; position: absolute; margin-left: 50px;">Kho sách</h2>
+                  <ul id="nav-book">
+                    <li>
+                        <a href="#">Tất cả</a>
+                    </li>
+                    <li>
+                        <a href="#">Sách mới</a>
+                    </li>
+                    <li>
+                        <a href="#">Sách cũ</a>
+                    </li>
+                    <li>
+                        <a href="#">Sách đọc nhiều</a>
+                    </li>
+                </ul>
+                <div class="search-box">
+                    <form action="">
+                      <input title="Nhập để tìm kiếm sách" class="input-search" type="text" placeholder="Nhập tên sách, thể loại, tác giả,..." name="search">
+                      <button title="Bấm để tìm kiếm" class="btn-search" type="submit"><i class="ti-search"></i></button>
+                    </form>
+                </div>
+                </div>
+                <div class="box-type">
+                  <h4 style="margin: 0 0 5px; font-weight: 500;">Tìm kiếm nâng cao</h4>
+                  <form action="">
+                    <label for="book-type" style="margin-left: 10px;">Thể loại:</label>
+                    <select name="book-type" id="book-type">
+                        <option value="vanhoc">Văn học</option>
+                        <option value="kinhte">Kinh tế</option>
+                        <option value="xahoi">Xã hội</option>
+                        <option value="truyen">Truyện tranh</option>
+                        <option style="display: none;" selected>-Chọn thể loại-</option>
+                    </select>
+                    <label for="author-type" >Tác giả:</label>
+                    <select name="author-type" id="author-type">
+                        <option value="">Kim Lân</option>
+                        <option value="">Nguyễn Du</option>
+                        <option value="">Fujiko Fujio</option>
+                        <option style="display: none;" selected>-Chọn tác giả-</option>
+                    </select>
+                    <label for="publisher-type" >Nhà xuất bản:</label>
+                    <select name="publisher-type" id="publisher-type">
+                        <option value="">NXB Kim Đồng</option>
+                        <option value="">NXB Thanh Niên</option>
+                        <option value="">NXB Lao Động</option>
+                        <option value="">NXB Phụ nữ Việt Nam</option>
+                        <option style="display: none;" selected>-Chọn Nhà xuất bản-</option>
+                    </select>
+                    <input type="checkbox" name="newbook" id="new-book" style="margin-right: 10px; cursor: pointer;">Sách mới
+                    <button type="reset" value="" id="btn-reset-type" class="btn-css">Bỏ chọn</button>
+                    <button type="submit" value="" id="btn-search-type" class="btn-css">Tìm kiếm</button>
+                  </form>  
+                </div>
+                
+                
+                
+                <table style="margin-top: 10px;">
+                    <tr>
+                      <th style="width: 50px;">STT</th>
+                      <th>Tên sách</th>
+                      <th>Bìa sách</th>
+                      <th>Thể loại</th>
+                      <th>Tác giả</th>
+                      <th>Nhà xuất bản</th>
+                      <th>Số lượng</th>
+                      <th>Đã mượn</th>
+                      <th>Còn lại</th>
+                      <th>Tác vụ</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="nameBook">DORAEMON TRUYỆN DÀI - TẬP 1 - CHÚ KHỦNG LONG CỦA NOBITA</td>
+                      <td class="img"><img src="https://product.hstatic.net/200000343865/product/1_d91fc04c758e46e494dc65d59f9bd2b9_master.jpg" alt="" style="width: 80px;"></img></td>
+                      <td>Truyện tranh</td>
+                      <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fujiko_Fujio">Fujiko Fujio</a></td>
+                      <td><a target="_blank" href="https://nxbkimdong.com.vn/blogs/gioi-thieu/gioi-thieu-nha-xuat-ban-kim-dong">Kim Đồng</a></td>
+                      <td>100</td>
+                      <td>54</td>
+                      <td>46</td>
+                      <td>
+                        <button type="button" value="" id="" class="btn-css btn-infor"><i class="ti-menu"></i> Xem</button>
+                        <button type="button" value="" id="" class="btn-css btn-upbook"><i class="ti-settings"></i> Sửa</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td class="nameBook">DORAEMON TRUYỆN DÀI - TẬP 2 - NOBITA VÀ LỊCH SỬ KHAI PHÁ VŨ TRỤ</td>
+                      <td class="img"><img src="https://vanlang.vn/uploads/image_171875_1559049063.jpg" alt="" style="width: 80px;"></img></td>
+                      <td>Truyện tranh</td>
+                      <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fujiko_Fujio">Fujiko Fujio</a></td>
+                      <td><a target="_blank" href="https://nxbkimdong.com.vn/blogs/gioi-thieu/gioi-thieu-nha-xuat-ban-kim-dong">Kim Đồng</a></td>
+                      <td>98</td>
+                      <td>34</td>
+                      <td>64</td>
+                      <td>
+                        <button type="button" value="" id="" class="btn-css btn-infor"><i class="ti-menu"></i> Xem</button>
+                        <button type="button" value="" id="" class="btn-css btn-upbook"><i class="ti-settings"></i> Sửa</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td class="nameBook">Doraemon Truyện Dài - Tập 3 - Nobita thám hiểm vùng đất mới</td>
+                      <td class="img"><img src="https://salt.tikicdn.com/ts/product/b9/a5/e7/da50adcd4c38d5bad125314ece7561e1.jpg" alt="" style="width: 80px;"></img></td>
+                      <td>Truyện tranh</td>
+                      <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fujiko_Fujio">Fujiko Fujio</a></td>
+                      <td><a target="_blank" href="https://nxbkimdong.com.vn/blogs/gioi-thieu/gioi-thieu-nha-xuat-ban-kim-dong">Kim Đồng</a></td>
+                      <td>100</td>
+                      <td>54</td>
+                      <td>46</td>
+                      <td>
+                        <button type="button" value="" id="" class="btn-css btn-infor"><i class="ti-menu"></i> Xem</button>
+                        <button type="button" value="" id="" class="btn-css btn-upbook"><i class="ti-settings"></i> Sửa</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td class="nameBook">DORAEMON TRUYỆN DÀI - TẬP 4 - NOBITA VÀ LÂU ĐÀI DƯỚI ĐÁY BIỂN</td>
+                      <td class="img"><img src="https://product.hstatic.net/200000343865/product/4_142_e89f29925bb94a4ba60c17cbb432d216_master.jpg" alt="" style="width: 80px;"></img></td>
+                      <td>Truyện tranh</td>
+                      <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fujiko_Fujio">Fujiko Fujio</a></td>
+                      <td><a target="_blank" href="https://nxbkimdong.com.vn/blogs/gioi-thieu/gioi-thieu-nha-xuat-ban-kim-dong">Kim Đồng</a></td>
+                      <td>98</td>
+                      <td>34</td>
+                      <td>64</td>
+                      <td>
+                        <button type="button" value="" id="" class="btn-css btn-infor"><i class="ti-menu"></i> Xem</button>
+                        <button type="button" value="" id="" class="btn-css btn-upbook"><i class="ti-settings"></i> Sửa</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td class="nameBook">DORAEMON TRUYỆN DÀI - TẬP 1 - CHÚ KHỦNG LONG CỦA NOBITA</td>
+                      <td class="img"><img src="https://product.hstatic.net/200000343865/product/1_d91fc04c758e46e494dc65d59f9bd2b9_master.jpg" alt="" style="width: 80px;"></img></td>
+                      <td>Truyện tranh</td>
+                      <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fujiko_Fujio">Fujiko Fujio</a></td>
+                      <td><a target="_blank" href="https://nxbkimdong.com.vn/blogs/gioi-thieu/gioi-thieu-nha-xuat-ban-kim-dong">Kim Đồng</a></td>
+                      <td>100</td>
+                      <td>54</td>
+                      <td>46</td>
+                      <td>
+                        <button type="button" value="" id="" class="btn-css btn-infor"><i class="ti-menu"></i> Xem</button>
+                        <button type="button" value="" id="" class="btn-css btn-upbook"><i class="ti-settings"></i> Sửa</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td class="nameBook">DORAEMON TRUYỆN DÀI - TẬP 2 - NOBITA VÀ LỊCH SỬ KHAI PHÁ VŨ TRỤ</td>
+                      <td class="img"><img src="https://vanlang.vn/uploads/image_171875_1559049063.jpg" alt="" style="width: 80px;"></img></td>
+                      <td>Truyện tranh</td>
+                      <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fujiko_Fujio">Fujiko Fujio</a></td>
+                      <td><a target="_blank" href="https://nxbkimdong.com.vn/blogs/gioi-thieu/gioi-thieu-nha-xuat-ban-kim-dong">Kim Đồng</a></td>
+                      <td>98</td>
+                      <td>34</td>
+                      <td>64</td>
+                      <td>
+                        <button type="button" value="" id="" class="btn-css btn-infor"><i class="ti-menu"></i> Xem</button>
+                        <button type="button" value="" id="" class="btn-css btn-upbook"><i class="ti-settings"></i> Sửa</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td class="nameBook">Doraemon Truyện Dài - Tập 3 - Nobita thám hiểm vùng đất mới</td>
+                      <td class="img"><img src="https://salt.tikicdn.com/ts/product/b9/a5/e7/da50adcd4c38d5bad125314ece7561e1.jpg" alt="" style="width: 80px;"></img></td>
+                      <td>Truyện tranh</td>
+                      <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fujiko_Fujio">Fujiko Fujio</a></td>
+                      <td><a target="_blank" href="https://nxbkimdong.com.vn/blogs/gioi-thieu/gioi-thieu-nha-xuat-ban-kim-dong">Kim Đồng</a></td>
+                      <td>100</td>
+                      <td>54</td>
+                      <td>46</td>
+                      <td>
+                        <button type="button" value="" id="" class="btn-css btn-infor"><i class="ti-menu"></i> Xem</button>
+                        <button type="button" value="" id="" class="btn-css btn-upbook"><i class="ti-settings"></i> Sửa</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td class="nameBook">DORAEMON TRUYỆN DÀI - TẬP 4 - NOBITA VÀ LÂU ĐÀI DƯỚI ĐÁY BIỂN</td>
+                      <td class="img"><img src="https://product.hstatic.net/200000343865/product/4_142_e89f29925bb94a4ba60c17cbb432d216_master.jpg" alt="" style="width: 80px;"></img></td>
+                      <td>Truyện tranh</td>
+                      <td><a target="_blank" href="https://en.wikipedia.org/wiki/Fujiko_Fujio">Fujiko Fujio</a></td>
+                      <td><a target="_blank" href="https://nxbkimdong.com.vn/blogs/gioi-thieu/gioi-thieu-nha-xuat-ban-kim-dong">Kim Đồng</a></td>
+                      <td>98</td>
+                      <td>34</td>
+                      <td>64</td>
+                      <td>
+                        <button type="button" value="" id="" class="btn-css btn-infor"><i class="ti-menu"></i> Xem</button>
+                        <button type="button" value="" id="" class="btn-css btn-upbook"><i class="ti-settings"></i> Sửa</button>
+                      </td>
+                    </tr>
+                  </table>
+              </div>
+            
+              <div id="tab-update" class="w3-container tab" style="display:none">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p> 
+                <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+              </div>
+            
+              <div id="tab-libra" class="w3-container tab" style="display:none">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+                <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p> 
+              </div>
+                <div id="tab-reader" class="w3-container tab" style="display:none">
+                    <h2>Paris</h2>
+                    <p>Paris is the capital of France.</p> 
+                    <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+                  </div>
+                
+                  <div id="tab-invoi" class="w3-container tab" style="display:none">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                    <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+                  </div> 
+        </div>
+    </div>
+    
+    </div>
+
+        
+
+        <div id="footer">
+
+        </div>
+    </div>
+    <script>
+        function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " w3-red";
+        }
+        // ---------------------------------------------------
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+        })
+        
+    </script>
+</body>
+</html>
